@@ -3,10 +3,12 @@
 Node should be installed on their local machines.
 
 ##Execution
+
+`
+$ npm install
 `
 
-$ npm install
-
+`
 $ npm start
 `
 - You can find a sample input message in 'input.txt' in the public directory.
