@@ -71,8 +71,12 @@ class Tokenizer {
     while (this._string[this._cursor] !== "|" && this.hasMoreTokens()) {
       seg += this._string[this._cursor++];
     }
-    this._seg = seg;
-    return [seg, null, null];
+    if (seg.length === 3) {
+      this._seg = seg;
+      return [seg, null, null];
+    }
+
+    throw new SyntaxError(`Invalid segment: "${seg}"`);
   }
 
   /**
@@ -84,9 +88,13 @@ class Tokenizer {
     while (this._string[this._cursor] !== "|" && this.hasMoreTokens()) {
       field += this._string[this._cursor++];
     }
-    const fieldName = field.slice(0, 3);
-    const fieldValue = field.slice(3);
-    return [this._seg, fieldName, fieldValue];
+    if (field.length >= 3) {
+      const fieldName = field.slice(0, 3);
+      const fieldValue = field.slice(3);
+      return [this._seg, fieldName, fieldValue];
+    }
+
+    throw new SyntaxError(`Invalid field: "${field}"`);
   }
 
   /**
