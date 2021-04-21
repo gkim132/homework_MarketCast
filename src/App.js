@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Parser } from "./Parser";
-const parser = new Parser();
+// import { Parser } from "./Parser";
+// const parser = new Parser();
 
 function App() {
   const [input, setInput] = useState("");
@@ -30,9 +30,9 @@ function App() {
 
   // After components mounts, fetch for input.txt in public directory
   useEffect(() => {
-    fetch("input.txt")
-      .then((res) => res.text())
-      .then((input) => setInput(parser.parse(input)));
+    fetch("http://localhost:8000/message")
+      .then((res) => res.json())
+      .then((input) => setInput(input));
   }, []);
 
   return (

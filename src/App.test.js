@@ -2,10 +2,10 @@
  * Main test runner
  */
 
-const { Parser } = require("./Parser");
+const { Parser } = require("../api/Parser");
 
 var fs = require("fs");
-var text = fs.readFileSync("./src/sampleData.txt", "utf-8");
+var text = fs.readFileSync("./api/sampleData.txt", "utf-8");
 var arrayOfLines = text.match(/[^\r\n]+/g);
 
 const parser = new Parser();
