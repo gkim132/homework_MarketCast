@@ -3,7 +3,7 @@
 Node should be installed on their local machines.
 
 ## Execution
-
+### Front-end
 `
 $ npm install
 `
@@ -11,13 +11,24 @@ $ npm install
 `
 $ npm start
 `
-- You can find a sample input message in 'input.txt' in the public directory.
-- React is used for building a user interface. 
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React is used for building a user interface. 
+
+### Node Server
+`
+$ npm 
+`
+- You can find a sample input message in 'input.txt' in the public directory.
+Server starts at port 8000
 
 ## Test
 
 `
 $ npm run test 
+`
+
+`
+Press a to run all tests
 `
 - You can find test cases in 'sampleData.txt' in the src directory.
