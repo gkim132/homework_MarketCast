@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Node Server
 `
-$ npm 
+$ node server
 `
 - You can find a sample input message in 'input.txt' in the public directory.
 Server starts at port 8000
