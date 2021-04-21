@@ -1,8 +1,8 @@
 # Guk Kim
-##Pre-requisites
+## Pre-requisites
 Node should be installed on their local machines.
 
-##Execution
+## Execution
 
 `
 $ npm install
@@ -15,7 +15,7 @@ $ npm start
 - React is used for building a user interface. 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-##Test
+## Test
 
 `
 $ npm run test 
