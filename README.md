@@ -23,7 +23,7 @@ $ cd api
 `
 $ node server
 `
-- You can find a sample input message in 'input.txt' in the public directory.
+- You can find a sample input message in 'inputData.txt' in the public directory.
 Server starts at port 8000
 
 ## Test
